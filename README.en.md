@@ -2,7 +2,7 @@
 
 An editable **DaVinci Resolve 21 Fusion title** with perspective scrolling text, horizon fading and a procedural starfield.
 
-**v0.1.0-beta.1 is an initial testing release.** Syntax, references and package integrity have been checked. Installation, Inspector behavior and actual rendering in Resolve have **not** been verified yet.
+**v0.1.0 is a regular release of the unchanged installer tested by the user.** Downloading from GitHub and several aspects of functionality have been confirmed. An exhaustive control, export and compatibility checklist has not been documented.
 
 ![Mathematical reference preview, not rendered in Resolve](docs/galactic-crawl-preview.png)
 
@@ -10,13 +10,13 @@ The image and [30-second animation](https://github.com/pacoestrada/galactic-craw
 
 ## Download and install
 
-1. [Download Galactic-Crawl.drfx](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0-beta.1/Galactic-Crawl.drfx) from the [beta release](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0-beta.1).
+1. [Download Galactic-Crawl.drfx](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/Galactic-Crawl.drfx) from the [release](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0).
 2. Open a Resolve project and switch to the **Fusion** page.
 3. Drag the downloaded `.drfx` onto Fusion and confirm installation.
 4. Find **Galactic Crawl** under **Edit → Effects Library → Titles**. Restart Resolve if needed.
 5. Use a 1920 × 1080 landscape timeline and a **60–90 second** title clip for the first test.
 
-Do not unzip the installer or use GitHub's source archive as the installer. This is a pre-release; links intentionally target the version tag instead of `releases/latest`.
+Do not unzip the installer or use GitHub's source archive as the installer. This is a regular release, also available through [releases/latest](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/latest).
 
 For manual Linux installation, download the `.setting` release asset, rename it to `Galactic Crawl.setting`, copy it to the following folder and restart Resolve:
 

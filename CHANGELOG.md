@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.0 — 2026-09-08
+
+- Publicación como release normal tras la confirmación del usuario: descargada de GitHub y funcional en varios aspectos comprobados.
+- Instalador `.drfx` y macro `.setting` idénticos byte a byte a v0.1.0-beta.1; no se modifica el título.
+- Enlaces de descarga y documentación actualizados. La beta anterior se conserva.
+- Sigue pendiente documentar una comprobación exhaustiva de controles, exportación y otras plataformas.
+
 ## 0.1.0-beta.1 — 2026-09-08
 
 Primera publicación para probar la descarga de GitHub y la instalación en DaVinci Resolve.

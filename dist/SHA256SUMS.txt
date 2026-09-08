@@ -1,3 +1,3 @@
 115dba33a03046341ffa2e8768c502d3ecb3d682d5855ff3696702ce9ad1601a  Galactic-Crawl.drfx
 665ab4b0ef1736c7542e871dec5be4e02273e72511ddea5790903a9fb30b0358  Galactic-Crawl.setting
-316aba0b8e1e5dbc85178090527fa7a2eae95c8f1f5cbee8178a12e2d1e471d1  Galactic-Crawl-quickstart-es.txt
+f7bc6d8e89d8cdced57201a06c9ceb445b9fc7bc2c67647a93503a5ca5d85baa  Galactic-Crawl-quickstart-es.txt

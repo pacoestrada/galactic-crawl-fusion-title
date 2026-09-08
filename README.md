@@ -2,25 +2,25 @@
 
 Título Fusion reutilizable para **DaVinci Resolve 21**, con texto que asciende en perspectiva y se pierde en un fondo de estrellas editable. Inspirado en las aperturas de aventuras espaciales.
 
-[![Beta](https://img.shields.io/badge/estado-beta-yellow.svg)](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0-beta.1)
+[![Release v0.1.0](https://img.shields.io/badge/release-v0.1.0-blue.svg)](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0)
 [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
 [![Validación](https://github.com/pacoestrada/galactic-crawl-fusion-title/actions/workflows/validate.yml/badge.svg)](https://github.com/pacoestrada/galactic-crawl-fusion-title/actions/workflows/validate.yml)
 
-**Primera beta: la sintaxis y el paquete están comprobados; la instalación, los controles y el render dentro de Resolve están pendientes de prueba.** La validación automática no acredita compatibilidad visual ni rendimiento.
+**v0.1.0: descarga desde GitHub y funcionamiento de varios aspectos confirmados por el usuario.** El instalador conserva exactamente los bytes de la beta probada. No se ha documentado una comprobación exhaustiva de todos los controles, exportación o plataformas.
 
 ![Simulación orientativa de Galactic Crawl, no renderizada en Resolve](docs/galactic-crawl-preview.png)
 
 [Ver o descargar la animación orientativa de 30 segundos](https://github.com/pacoestrada/galactic-crawl-fusion-title/raw/refs/heads/main/docs/galactic-crawl-preview.mp4). Es una simulación de las fórmulas del título, **no un render de Fusion**. La leyenda inferior no forma parte del título instalable.
 
-## Descargar la beta
+## Descargar la release
 
-- **[Descargar Galactic-Crawl.drfx](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0-beta.1/Galactic-Crawl.drfx)** — paquete recomendado para instalar.
-- [Abrir la página de la versión v0.1.0-beta.1](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0-beta.1).
-- [Descargar Galactic-Crawl.setting](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0-beta.1/Galactic-Crawl.setting) — alternativa manual.
-- [Guía rápida en español](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0-beta.1/Galactic-Crawl-quickstart-es.txt).
-- [Sumas SHA-256](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0-beta.1/SHA256SUMS.txt).
+- **[Descargar Galactic-Crawl.drfx](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/Galactic-Crawl.drfx)** — paquete recomendado para instalar.
+- [Abrir la página de la versión v0.1.0](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0).
+- [Descargar Galactic-Crawl.setting](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/Galactic-Crawl.setting) — alternativa manual.
+- [Guía rápida en español](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/Galactic-Crawl-quickstart-es.txt).
+- [Sumas SHA-256](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/SHA256SUMS.txt).
 
-En la página de la versión, abre **Assets** y descarga el `.drfx`. No necesitas descargar el repositorio entero ni descomprimir el instalador. Esta versión es una **pre-release**: los enlaces apuntan a su etiqueta concreta, no a `releases/latest`.
+En la página de la versión, abre **Assets** y descarga el `.drfx`. No necesitas descargar el repositorio entero ni descomprimir el instalador. Esta versión es una **release normal**, disponible también en [la última release](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/latest).
 
 ## Instalar en DaVinci Resolve
 
@@ -44,7 +44,7 @@ Descarga `Galactic-Crawl.setting`, **renómbralo a `Galactic Crawl.setting`** y 
 
 Puedes localizar la carpeta desde **Fusion → Biblioteca de efectos → Templates → Edit → Titles → menú de tres puntos → Show Folder / Mostrar carpeta**. Crea las carpetas que falten, respetando las mayúsculas, y reinicia Resolve.
 
-Utiliza un solo método de instalación para evitar títulos duplicados. Si ya instalaste la copia local de esta beta, elimina esa instalación antes de probar la descarga de GitHub; conserva antes cualquier modificación propia.
+Utiliza un solo método de instalación para evitar títulos duplicados. Si ya instalaste la copia local de esta versión, elimina esa instalación antes de probar la descarga de GitHub; conserva antes cualquier modificación propia.
 
 ## Qué puedes editar
 
@@ -66,7 +66,7 @@ Utiliza un solo método de instalación para evitar títulos duplicados. Si ya i
 
 Con los demás controles sin cambios, al **alargar el clip** la animación se ralentiza. El texto se desvanece durante el último 8 % del clip; el fondo permanece. Una velocidad muy baja puede impedir que termine de pasar todo el relato antes de ese desvanecimiento.
 
-La beta usa un lienzo interno de texto de **1920 × 4096**, sin ajuste automático de líneas. Empieza con unas **20–25 líneas cortas**; si añades mucho texto, reduce su tamaño y revisa que no se corte. La posición inicial y el recorrido necesitan reajuste si cambias mucho la longitud. Puedes partir del [texto de ejemplo](docs/example-text-es.txt).
+El título usa un lienzo interno de texto de **1920 × 4096**, sin ajuste automático de líneas. Empieza con unas **20–25 líneas cortas**; si añades mucho texto, reduce su tamaño y revisa que no se corte. La posición inicial y el recorrido necesitan reajuste si cambias mucho la longitud. Puedes partir del [texto de ejemplo](docs/example-text-es.txt).
 
 ### Fondo de estrellas
 
@@ -91,12 +91,13 @@ Para comunicar una incidencia, usa [Issues → Bug report](https://github.com/pa
 
 ## Compatibilidad y alcance de la validación
 
-- **Destino de esta beta:** DaVinci Resolve 21 en Linux; primera prueba recomendada a 1920 × 1080, horizontal.
+- **Destino de esta versión:** DaVinci Resolve 21 en Linux; primera prueba recomendada a 1920 × 1080, horizontal.
 - **Herramientas utilizadas:** `TextPlus`, `Background`, `Custom` y `Merge`, dentro de un `GroupOperator`.
 - **Comprobado:** lectura y sintaxis con el runtime instalado de Fusion, referencias internas, estructura del `.drfx` y coincidencia de archivos.
-- **Pendiente:** instalación real, render, reconocimiento de los controles y rendimiento en Resolve Free/Studio; otros sistemas y formatos de imagen.
+- **Confirmado por el usuario:** descarga desde GitHub y funcionamiento de varios aspectos.
+- **Pendiente:** documentar controles concretos comprobados, exportación, rendimiento y compatibilidad con otras ediciones, sistemas y formatos.
 
-Consulta [VALIDATION.md](VALIDATION.md) para ver las comprobaciones exactas. No se presenta esta beta como una versión estable.
+Consulta [VALIDATION.md](VALIDATION.md) para ver las comprobaciones exactas. La publicación como release normal no equivale a una certificación exhaustiva de compatibilidad.
 
 ## Desarrollo
 
@@ -114,7 +115,7 @@ Para validar localmente, usa Python 3.10 o posterior y Lua 5.4 como biblioteca c
 python3 tools/validate_release.py
 ```
 
-La validación se repite en GitHub Actions. El instalador de esta beta conserva los mismos bytes que el archivo preparado antes de la publicación. [Arquitectura y empaquetado](docs/ARCHITECTURE.md).
+La validación se repite en GitHub Actions. El instalador de esta versión conserva los mismos bytes que el archivo preparado antes de la publicación. [Arquitectura y empaquetado](docs/ARCHITECTURE.md).
 
 ## Autoría y licencia
 

@@ -1,4 +1,4 @@
-GALACTIC CRAWL — Primera beta para DaVinci Resolve 21 / Linux
+GALACTIC CRAWL — Release v0.1.0 para DaVinci Resolve 21 / Linux
 Fecha: 8 de septiembre de 2026
 
 Título reutilizable con texto amarillo en perspectiva, desplazamiento hacia el
@@ -58,16 +58,20 @@ Color del espacio: azul casi negro por defecto; editable con el selector RGB.
 No hay imágenes externas que enlazar. Cambiar el fondo por una imagen propia
 se hace con la pista inferior, no con un selector de archivo en el Inspector.
 
-ESTADO DE LA BETA
+ESTADO DE LA RELEASE
 Comprobado:
 - Sintaxis aceptada por el intérprete Lua incluido con Fusion.
 - El lector nativo bmd.readfile carga la tabla y los siete nodos internos.
 - Referencias de nodos y controles publicadas coherentes.
 - Integridad del paquete .drfx y coincidencia con el .setting independiente.
 
+Confirmación del usuario:
+- Descargado de GitHub y funcional en varios aspectos comprobados.
+- El instalador no se ha modificado respecto a la beta probada.
+
 Pendiente:
-- Instalación, reconocimiento de todos los controles y reproducción/render
-  dentro de DaVinci Resolve 21; Resolve estaba cerrado al preparar esta beta.
+- Registrar los controles concretos comprobados y completar una revisión
+  exhaustiva de reproducción y exportación dentro de Resolve.
 - Ajuste fino del texto, suavizado y rendimiento en el render real.
 - Validación en otras resoluciones y formatos verticales.
 
@@ -81,5 +85,5 @@ Manual de DaVinci Resolve instalado en /opt/resolve/docs/DaVinci_Resolve_Manual.
 sección Custom Tool / Miscellaneous Nodes. Manuales oficiales:
 https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion
 
-Descarga oficial de esta beta:
-https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0-beta.1
+Descarga oficial de esta release:
+https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0

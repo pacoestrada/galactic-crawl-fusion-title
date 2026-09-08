@@ -128,7 +128,7 @@ def main() -> None:
     check_links()
     print('OK: Lua syntax/table evaluation; 7 nodes and 23 published components; acyclic, resolved graph')
     print('OK: DRFX integrity and paths; both settings match; 3 SHA-256 checksums; local Markdown links')
-    print('Scope: structural validation only. Resolve installation and rendering remain unverified.')
+    print('Scope: structural validation only. This script does not test Resolve installation or rendering.')
 
 if __name__ == '__main__':
     main()

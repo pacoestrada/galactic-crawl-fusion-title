@@ -1,10 +1,10 @@
 # Prueba desde GitHub hasta DaVinci
 
-Esta guía prueba **v0.1.0-beta.1 descargada de GitHub**, para distinguir fallos de distribución de fallos dentro del editor. No es un informe de resultados: las casillas son pasos pendientes de ejecución manual.
+Esta guía prueba **v0.1.0 descargada de GitHub**, para distinguir fallos de distribución de fallos dentro del editor. El usuario ya confirmó la descarga y el funcionamiento de varios aspectos. No es un informe exhaustivo de resultados: las casillas permiten registrar cada comprobación concreta.
 
 ## 1. Descargar
 
-- [ ] Abrir [la versión beta](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0-beta.1).
+- [ ] Abrir [la versión beta](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0).
 - [ ] En **Assets**, descargar `Galactic-Crawl.drfx` a una carpeta nueva.
 - [ ] Comprobar que el archivo conserva la extensión `.drfx` y no termina en `.html`, `.txt` o `.zip`.
 - [ ] Opcional: descargar `SHA256SUMS.txt` a la misma carpeta y comprobar la suma del `.drfx`.
@@ -48,7 +48,7 @@ No se incluyen créditos, música ni audio. La vista orientativa del repositorio
 
 | Síntoma | Primera comprobación |
 | --- | --- |
-| El enlace no descarga o da 404 | Anota el enlace exacto y comprueba que estás en la etiqueta `v0.1.0-beta.1`. |
+| El enlace no descarga o da 404 | Anota el enlace exacto y comprueba que estás en la etiqueta `v0.1.0`. |
 | Se descarga HTML o una página | Usa el asset `.drfx`, no «Guardar página como» ni el ZIP del repositorio. |
 | La suma no coincide | Descarga de nuevo el asset en otra carpeta y compara con el manifiesto de esa misma versión. |
 | No hay diálogo de instalación | Comprueba la extensión y arrastra el archivo a Fusion; el doble clic depende de la asociación del sistema. |
