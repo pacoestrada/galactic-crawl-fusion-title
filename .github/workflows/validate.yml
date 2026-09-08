@@ -1,0 +1,21 @@
+name: Validate release
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Lua parser library
+        run: sudo apt-get update && sudo apt-get install -y liblua5.4-0
+      - name: Validate setting, package, checksums and local documentation links
+        run: python3 tools/validate_release.py
