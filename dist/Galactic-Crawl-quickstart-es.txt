@@ -1,0 +1,85 @@
+GALACTIC CRAWL — Primera beta para DaVinci Resolve 21 / Linux
+Fecha: 8 de septiembre de 2026
+
+Título reutilizable con texto amarillo en perspectiva, desplazamiento hacia el
+horizonte, desvanecimiento y estrellas generadas dentro del propio título.
+
+INSTALACIÓN
+1. Abre Resolve y entra en la página Fusion de un proyecto.
+2. Arrastra «Galactic-Crawl.drfx» desde el gestor de archivos a la página Fusion.
+3. Acepta la instalación que muestre Resolve.
+4. En Editar > Biblioteca de efectos > Títulos, busca «Galactic Crawl».
+   Si no aparece, reinicia Resolve.
+
+Alternativa manual: renombra «Galactic-Crawl.setting» a
+«Galactic Crawl.setting» y cópialo a:
+~/.local/share/DaVinciResolve/Fusion/Templates/Edit/Titles/
+Puedes localizar esa carpeta desde Fusion > Biblioteca de efectos >
+Templates > Edit > Titles > menú de tres puntos > Show Folder / Mostrar carpeta.
+No necesitas instalar a la vez el .drfx y el .setting.
+
+PRIMERA PRUEBA
+- Usa una línea de tiempo horizontal 1920 × 1080.
+- Coloca el título en una pista de vídeo y dale entre 60 y 90 segundos.
+- Reproduce desde el inicio. Sustituye la historia en el Inspector.
+- La velocidad normal es 1. Al alargar el clip, el recorrido tarda más.
+- El recorrido usa la duración completa del clip, independientemente de sus fps.
+  El último 8 % del clip desvanece el texto; el fondo permanece visible.
+
+TEXTO Y PERSPECTIVA
+Texto de la historia: admite varias líneas. La beta no incorpora ajuste
+automático de líneas: introduce los saltos de línea manualmente.
+Tipografía / Estilo: DejaVu Sans Bold por defecto, disponible en este equipo.
+La fuente no se distribuye en el paquete. Puedes escoger otra en el Inspector.
+Tamaño del texto: 0,05 por defecto. Reduce el tamaño si escribes líneas largas.
+Color del texto: amarillo por defecto; incluye transparencia.
+Velocidad: 1 por defecto; valores menores ralentizan, mayores aceleran.
+Altura del horizonte: 0,78 por defecto; prueba entre 0,65 y 0,90.
+Perspectiva: 0,18 por defecto; cambia el acortamiento visual de la columna.
+Ancho de la columna: 0,95 por defecto.
+Desvanecimiento al fondo: 0,16 por defecto.
+Posición inicial: 0,82 por defecto. Auméntala si el texto ya aparece al empezar.
+Recorrido total: 2,4 por defecto. Modifica cuánto avanza durante el clip.
+Los valores superiores a 1 se pueden introducir escribiendo en el campo.
+
+El texto se compone sobre un lienzo interno de 1920 × 4096. Si añades mucho
+texto, reduce el tamaño y comprueba que no quede cortado. Se recomienda
+empezar con unas 20–25 líneas cortas como las del ejemplo. Tras modificar
+mucho la longitud, ajusta Posición inicial y Recorrido total.
+
+FONDO EDITABLE, EN EL MISMO TÍTULO
+Cantidad de estrellas: 0,08 por defecto; 0 elimina todas las estrellas.
+Brillo de estrellas: 0,8 por defecto.
+Tamaño de estrellas: 0,35 por defecto.
+Distribución de estrellas: 0,25 por defecto; cambia la disposición.
+Opacidad del fondo: 1 por defecto. Pon 0 para usar tu propio vídeo o imagen
+en una pista inferior. Los valores intermedios permiten mezclar ambos fondos.
+Color del espacio: azul casi negro por defecto; editable con el selector RGB.
+No hay imágenes externas que enlazar. Cambiar el fondo por una imagen propia
+se hace con la pista inferior, no con un selector de archivo en el Inspector.
+
+ESTADO DE LA BETA
+Comprobado:
+- Sintaxis aceptada por el intérprete Lua incluido con Fusion.
+- El lector nativo bmd.readfile carga la tabla y los siete nodos internos.
+- Referencias de nodos y controles publicadas coherentes.
+- Integridad del paquete .drfx y coincidencia con el .setting independiente.
+
+Pendiente:
+- Instalación, reconocimiento de todos los controles y reproducción/render
+  dentro de DaVinci Resolve 21; Resolve estaba cerrado al preparar esta beta.
+- Ajuste fino del texto, suavizado y rendimiento en el render real.
+- Validación en otras resoluciones y formatos verticales.
+
+«Galactic Crawl - vista orientativa.mp4» es una simulación de 30 segundos
+con las mismas fórmulas de perspectiva y estrellas. No es un render de Fusion.
+La tipografía y el muestreo pueden variar respecto al resultado real en Resolve.
+La leyenda de esa vista NO forma parte del título instalable.
+
+Referencia técnica de las funciones del nodo Custom:
+Manual de DaVinci Resolve instalado en /opt/resolve/docs/DaVinci_Resolve_Manual.pdf,
+sección Custom Tool / Miscellaneous Nodes. Manuales oficiales:
+https://www.blackmagicdesign.com/support/family/davinci-resolve-and-fusion
+
+Descarga oficial de esta beta:
+https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0-beta.1

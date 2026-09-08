@@ -1,0 +1,50 @@
+name: Bug report
+description: Informar de un problema de descarga, instalación o render.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Versión descargada
+      placeholder: "v0.1.0-beta.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Dónde falla
+      options:
+        - Descarga desde GitHub
+        - Instalación DRFX
+        - Instalación manual SETTING
+        - Inspector o render en Resolve
+    validations:
+      required: true
+  - type: input
+    id: resolve
+    attributes:
+      label: Versión de Resolve y edición Free/Studio
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Sistema operativo
+    validations:
+      required: true
+  - type: input
+    id: timeline
+    attributes:
+      label: Resolución y fps
+      placeholder: "1920 × 1080, 25 fps"
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos y resultado esperado / observado
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Capturas, mensaje de error o enlace de descarga que falla

@@ -1,0 +1,15 @@
+name: Feature request
+description: Proponer una mejora para el título.
+title: "[Idea]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Qué necesitas y para qué
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Comportamiento propuesto o referencia
