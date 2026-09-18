@@ -8,7 +8,7 @@ Para cambios de código:
 
 1. Modifica `src/Galactic Crawl.setting`.
 2. Actualiza el instalador de `dist/` y su alternativa `.setting`.
-3. Regenera las sumas SHA-256 y actualiza el historial.
+3. Ejecuta `python3 tools/build_release.py` para regenerar el `.setting`, el `.drfx` y las sumas SHA-256; actualiza también el historial.
 4. Ejecuta `python3 tools/validate_release.py` (Python 3.10+, biblioteca compartida Lua 5.4).
 5. Si tienes Resolve, añade resultados de instalación y render con el entorno exacto. Diferencia pruebas reales de vistas simuladas.
 6. Abre una pull request con el problema, el cambio y la validación realizada.

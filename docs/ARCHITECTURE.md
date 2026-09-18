@@ -28,7 +28,7 @@ La cuadrícula y la escala de los puntos se diseñaron para formato horizontal 1
 
 ## Paquete y archivos
 
-El `.drfx` de esta beta contiene exactamente:
+El `.drfx` contiene exactamente:
 
 ```text
 Edit/Titles/Galactic Crawl.setting
@@ -38,7 +38,7 @@ No incluye miniaturas de biblioteca, fuentes, fuses, plugins o medios externos. 
 
 `src/Galactic Crawl.setting`, `dist/Galactic-Crawl.setting` y el miembro interno del `.drfx` deben coincidir byte a byte. El nombre del archivo descargable usa guiones para dar URLs sencillas; el título interno conserva espacios.
 
-Esta publicación conserva el `.drfx` original sin reempaquetarlo. En futuras versiones puede generarse un ZIP con ese único miembro y extensión `.drfx`; los metadatos del ZIP pueden cambiar su SHA-256 aunque el `.setting` sea idéntico. Actualiza entonces `dist/SHA256SUMS.txt`, el historial, la etiqueta y las notas de versión conjuntamente.
+Desde v0.2.0 el `.drfx` se genera de forma reproducible como un ZIP con ese único miembro y extensión `.drfx`. Los metadatos del ZIP pueden cambiar su SHA-256 aunque el `.setting` sea idéntico; por ello, cada reconstrucción exige actualizar `dist/SHA256SUMS.txt`, el historial, la etiqueta y las notas de versión conjuntamente.
 
 ## Referencias
 

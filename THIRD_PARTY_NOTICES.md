@@ -6,7 +6,7 @@ The title references **DejaVu Sans Bold** as its default typeface. No font file 
 
 ## Names and inspiration
 
-Galactic Crawl is an independent project inspired by perspective-scrolling space-adventure opening titles. It does not include film footage, soundtracks, logos or opening-crawl text from Star Wars. The example story was created for this title.
+Galactic Crawl is an independent project inspired by perspective-scrolling space-adventure opening titles. It does not include film footage, soundtracks, logos or opening-crawl text from Star Wars. The default text is an original presentation of Paco Estrada.
 
 DaVinci Resolve and Blackmagic Design identify the target application. Star Wars identifies a visual reference only. This project is not affiliated with, sponsored by, or endorsed by Blackmagic Design, Lucasfilm or Disney.
 

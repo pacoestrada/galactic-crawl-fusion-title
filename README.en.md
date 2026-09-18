@@ -2,7 +2,7 @@
 
 An editable **DaVinci Resolve 21 Fusion title** with perspective scrolling text, horizon fading and a procedural starfield.
 
-**v0.1.0 is a regular release of the unchanged installer tested by the user.** Downloading from GitHub and several aspects of functionality have been confirmed. An exhaustive control, export and compatibility checklist has not been documented.
+**v0.2.0 adds a Paco Estrada presentation as the default crawl text** while keeping the graph, controls and animation unchanged. Syntax, package structure and checksums are validated automatically; the rebuilt installer still needs a complete manual Resolve test.
 
 ![Mathematical reference preview, not rendered in Resolve](docs/galactic-crawl-preview.png)
 
@@ -10,7 +10,7 @@ The image and [30-second animation](https://github.com/pacoestrada/galactic-craw
 
 ## Download and install
 
-1. [Download Galactic-Crawl.drfx](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/Galactic-Crawl.drfx) from the [release](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0).
+1. [Download Galactic-Crawl.drfx](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.2.0/Galactic-Crawl.drfx) from the [release](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.2.0).
 2. Open a Resolve project and switch to the **Fusion** page.
 3. Drag the downloaded `.drfx` onto Fusion and confirm installation.
 4. Find **Galactic Crawl** under **Edit → Effects Library → Titles**. Restart Resolve if needed.

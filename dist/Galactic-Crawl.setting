@@ -42,7 +42,7 @@ Story = TextPlus { Inputs = {
 Width = Input { Value = 1920, },
 Height = Input { Value = 4096, },
 UseFrameFormatSettings = Input { Value = 0, },
-StyledText = Input { Value = "EPISODIO I\nUN NUEVO COMIENZO\n\nEn los confines de una\ngalaxia desconocida,\nuna pequeña tripulación\nemprende un viaje hacia\nlas estrellas.\n\nSu misión: descubrir\nnuevos mundos y contar\nhistorias que todavía\nnadie ha imaginado.\n\nMientras la oscuridad\nse extiende, una señal\naparece en el horizonte.\n\nLa aventura\nacaba de comenzar....", },
+StyledText = Input { Value = "PACO ESTRADA\nCOMUNICACIÓN Y TECNOLOGÍA\n\nMás de treinta y cinco años\ndando voz a ideas,\nhistorias y proyectos.\n\nProducción sonora,\nlocución, radio y pódcast.\n\nDivulgación tecnológica,\neventos y contenidos.\n\nGNU/Linux, software libre,\nIA aplicada, automatización\ny herramientas a medida\ncon Bash, Python y FFmpeg.\n\n¿Tienes una idea?\n¿Tu empresa necesita\ncomunicar mejor,\nautomatizar un proceso\no crear una herramienta\nque resuelva algo real?\n\nHABLEMOS.", },
 Font = Input { Value = "DejaVu Sans", },
 Style = Input { Value = "Bold", },
 Size = Input { Value = 0.05, },

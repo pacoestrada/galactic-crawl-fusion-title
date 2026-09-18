@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.2.0 — 2026-09-18
+
+- Nuevo texto inicial: una presentación de Paco Estrada centrada en comunicación, producción sonora, tecnología, software libre y automatización.
+- Grafo, controles, expresiones y valores de animación sin cambios respecto a v0.1.0.
+- Vista previa PNG y animación MP4 actualizadas con el nuevo contenido.
+- Paquete `.drfx`, alternativa `.setting`, guía, documentación y sumas SHA-256 regenerados.
+- Validación automática de sintaxis Lua, grafo, integridad del paquete y coincidencia byte a byte superada.
+
 ## 0.1.0 — 2026-09-08
 
 - Publicación como release normal tras la confirmación del usuario: descargada de GitHub y funcional en varios aspectos comprobados.

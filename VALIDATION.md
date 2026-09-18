@@ -1,5 +1,11 @@
 # Validación
 
+## Release v0.2.0
+
+El 2026-09-18 se sustituyó únicamente el texto inicial por una presentación de Paco Estrada. El grafo, los controles, las expresiones y los valores de animación no cambiaron respecto a v0.1.0. Al cambiar los bytes del `.setting`, se reconstruyeron el `.drfx` y las sumas SHA-256.
+
+La validación portable acepta la nueva sintaxis y confirma la estructura, las referencias, la integridad del paquete y la coincidencia byte a byte de las tres copias del título. Esta comprobación no sustituye una instalación y reproducción manual en Resolve.
+
 ## Confirmación del usuario y release v0.1.0
 
 El 2026-09-08, el usuario confirmó que el título descargado de GitHub era funcional en varios aspectos comprobados y pidió publicarlo como release. No detalló qué controles verificó. El `.drfx` y el `.setting` de v0.1.0 conservan exactamente los bytes de v0.1.0-beta.1.

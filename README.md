@@ -2,11 +2,11 @@
 
 Título Fusion reutilizable para **DaVinci Resolve 21**, con texto que asciende en perspectiva y se pierde en un fondo de estrellas editable. Inspirado en las aperturas de aventuras espaciales.
 
-[![Release v0.1.0](https://img.shields.io/badge/release-v0.1.0-blue.svg)](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0)
+[![Release v0.2.0](https://img.shields.io/badge/release-v0.2.0-blue.svg)](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.2.0)
 [![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue.svg)](LICENSE)
 [![Validación](https://github.com/pacoestrada/galactic-crawl-fusion-title/actions/workflows/validate.yml/badge.svg)](https://github.com/pacoestrada/galactic-crawl-fusion-title/actions/workflows/validate.yml)
 
-**v0.1.0: descarga desde GitHub y funcionamiento de varios aspectos confirmados por el usuario.** El instalador conserva exactamente los bytes de la beta probada. No se ha documentado una comprobación exhaustiva de todos los controles, exportación o plataformas.
+**v0.2.0 incorpora una presentación de Paco Estrada como texto inicial** y conserva el mismo grafo, controles y animación de la versión probada. La sintaxis, el paquete y su integridad se validan automáticamente; el nuevo archivo queda pendiente de una prueba manual completa en Resolve.
 
 ![Simulación orientativa de Galactic Crawl, no renderizada en Resolve](docs/galactic-crawl-preview.png)
 
@@ -14,11 +14,11 @@ Título Fusion reutilizable para **DaVinci Resolve 21**, con texto que asciende 
 
 ## Descargar la release
 
-- **[Descargar Galactic-Crawl.drfx](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/Galactic-Crawl.drfx)** — paquete recomendado para instalar.
-- [Abrir la página de la versión v0.1.0](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.1.0).
-- [Descargar Galactic-Crawl.setting](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/Galactic-Crawl.setting) — alternativa manual.
-- [Guía rápida en español](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/Galactic-Crawl-quickstart-es.txt).
-- [Sumas SHA-256](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.1.0/SHA256SUMS.txt).
+- **[Descargar Galactic-Crawl.drfx](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.2.0/Galactic-Crawl.drfx)** — paquete recomendado para instalar.
+- [Abrir la página de la versión v0.2.0](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/tag/v0.2.0).
+- [Descargar Galactic-Crawl.setting](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.2.0/Galactic-Crawl.setting) — alternativa manual.
+- [Guía rápida en español](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.2.0/Galactic-Crawl-quickstart-es.txt).
+- [Sumas SHA-256](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/download/v0.2.0/SHA256SUMS.txt).
 
 En la página de la versión, abre **Assets** y descarga el `.drfx`. No necesitas descargar el repositorio entero ni descomprimir el instalador. Esta versión es una **release normal**, disponible también en [la última release](https://github.com/pacoestrada/galactic-crawl-fusion-title/releases/latest).
 
@@ -52,7 +52,7 @@ Utiliza un solo método de instalación para evitar títulos duplicados. Si ya i
 
 | Control del Inspector | Valor inicial | Uso |
 | --- | ---: | --- |
-| Texto de la historia | Relato de ejemplo | Texto multilínea; introduce los saltos de línea manualmente. |
+| Texto de la historia | Presentación de Paco Estrada | Texto multilínea; introduce los saltos de línea manualmente. |
 | Tipografía / Estilo | DejaVu Sans / Bold | Selecciona una fuente instalada. La fuente no se incluye. |
 | Tamaño del texto | 0,05 | Reduce el tamaño para líneas más largas o más texto. |
 | Color del texto | Amarillo | Color y transparencia de las letras. |
@@ -109,9 +109,11 @@ tools/    Validación portable y comprobación nativa opcional
 .github/   Validación automática y formularios de incidencias
 ```
 
-Para validar localmente, usa Python 3.10 o posterior y Lua 5.4 como biblioteca compartida (`liblua5.4-0` en Debian/Ubuntu):
+Para reconstruir y validar localmente, usa Python 3.10 o posterior, Pillow y NumPy para las vistas, FFmpeg para el MP4 y Lua 5.4 como biblioteca compartida (`liblua5.4-0` en Debian/Ubuntu):
 
 ```sh
+python3 tools/build_release.py
+python3 tools/generate_preview.py
 python3 tools/validate_release.py
 ```
 
